@@ -16,7 +16,7 @@ header {
 
     img {
         width: 15%;
-        margin-right: 20px;
+        margin-left: 40px;
     }
 }
 
@@ -29,6 +29,7 @@ header {
         -webkit-text-fill-color: transparent;
         font-size: 75px;
         font-family: "Dancing Script";
+        margin: 0;
     }
 }
 
