@@ -30,6 +30,20 @@ nav li {
     margin-right: 20px;
 }
 
+nav ul li a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background: linear-gradient(to right, #90EE90, #ADD8E6);
+    color: black; 
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+nav ul li a:hover {
+    background: transparent;
+}
+
 section {
     padding: 20px;
 }
