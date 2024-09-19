@@ -10,9 +10,10 @@ header {
     display: flex; 
     align-items: center;
     justify-content: center; 
-img {
-    width: 15%;
-    margin-right: 20px;
+    img {
+        width: 15%;
+        margin-right: 20px;
+    }
 }
 
 .titrenav {
