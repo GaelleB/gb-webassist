@@ -46,12 +46,51 @@ h2 {
 }
 
 /* Services */
-.service {
-  margin-bottom: 40px;
+/* ... (autres styles) ... */
+
+/* Services */
+.services-grid {
+  display: flex;  /* Affiche les cartes en ligne */
+  justify-content: center; /* Centre les cartes */
+  gap: 20px; /* Espacement entre les cartes */
 }
 
-.service h3 {
-  margin-bottom: 10px;
+.service-card {
+  width: 300px; /* Largeur de la carte */
+  height: 200px; /* Hauteur de la carte */
+  perspective: 1000px; /* Crée un effet de perspective */
+}
+
+.service-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; /* Maintient l'effet 3D lors de la transition */
+}
+
+.service-card:hover .service-card-inner {
+  transform: rotateY(180deg); /* Rotation au survol */
+}
+
+.service-card-front, .service-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Cache la face arrière */
+  display: flex;
+  flex-direction: column; /* Organiser les éléments en colonne */
+  align-items: center; /* Centrer horizontalement */
+  border-radius: 25px;
+}
+
+.service-card-front {
+  background-color: #bbb; /* Couleur de la face avant */
+}
+
+.service-card-back {
+  background-color: #ddd; /* Couleur de la face arrière */
+  transform: rotateY(180deg); /* Rotation initiale de la face arrière */
 }
 
 /* Tarifs */
