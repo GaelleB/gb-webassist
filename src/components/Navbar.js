@@ -1,9 +1,11 @@
 import React from 'react';
+import Logo from '../assets/Logo GB WebAssist.png';
 
 function Navbar() {
 return (
     <nav>
         <div className="container">
+            <img src={Logo} alt="Logo GB WebAssist"/>
             <h1>GB WebAssist</h1>
             <ul>
                 <li>Accueil</li>

@@ -8,7 +8,7 @@ return (
             <div className="service">
                 <h3>Création de sites internet</h3>
                 <p>
-                    Nous créons des sites web performants et optimisés pour le référencement (SEO).
+                    Je crée des sites web performants et optimisés pour le référencement (SEO).
                 </p>
                 <ul>
                     <li>Conception sur mesure</li>
@@ -20,7 +20,7 @@ return (
             <div className="service">
                 <h3>Assistance informatique</h3>
                 <p>
-                    Nous offrons une assistance informatique complète pour les particuliers et les professionnels.
+                    J'offre une assistance informatique complète pour les particuliers et les professionnels.
                 </p>
                 <ul>
                     <li>Dépannage informatique</li>
