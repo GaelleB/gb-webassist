@@ -5,7 +5,7 @@ function Navbar() {
 return (
     <nav>
         <div className="container">
-            <img src={Logo} alt="Logo GB WebAssist"/>
+            <img src={Logo} alt="Logo GB WebAssist"/> 
             <h1>GB WebAssist</h1>
             <ul>
                 <li>Accueil</li>
