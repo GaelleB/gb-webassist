@@ -4,7 +4,7 @@ function Services() {
   return (
     <section id="services">
       <div className="container">
-        <h2>Nos Services</h2>
+        <h2>Mes Services</h2>
         <div className="services-grid"> {/* Conteneur pour les cartes */}
           <div className="service-card"> 
             <div className="service-card-inner">
