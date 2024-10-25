@@ -1,6 +1,8 @@
 :root {
-    --bleu-pastel: #A7D2CB;
-    --vert-pastel: #C7E8CA;
-    --jaune-moutarde: #E8C167;
-    --gris-anthracite: #303030; 
+    --text-black: #000; /* Noir */
+    --text-warning: #ffc107; /* Jaune */
+    --bg-secondary: #343a40; /* Gris foncé */
+    --bg-dark: #212529; /* Gris très foncé */
+    --text-light: #fff; /* Blanc */ 
+    --text-bg-light: #f8f9fa; /* Blanc pour fond de badge */
 }

@@ -1,7 +1,12 @@
+/* App.css */
+@import './colors.css';
+
 /* Général */
 body {
   font-family: sans-serif;
   margin: 0;
+  background-color: var(--bg-secondary); /* Gris foncé en fond */
+  color: var(--text-black); /* Texte noir */
 }
 
 .container {
@@ -13,22 +18,30 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* éléments en colonne */
+  align-items: center; /* centrer horizontalement */
   padding: 20px;
-  background-color: #f0f0f0; /* Couleur de fond légère */
+  background-color: var(--bleu-pastel); 
 }
 
-.navbar-container img { /* Logo */
-  max-height: 80px; 
-  margin-right: 20px;
+.navbar-container { /* Conteneur pour le logo et la navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.navbar-container img {
+  max-height: 80px;
+  margin-bottom: 20px; /* Espace entre le logo et la navbar */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; 
+  display: flex; /* Afficher les liens en ligne */
+  width: 100%; /* La navbar occupe toute la largeur */
+  justify-content: center; /* Centrer les liens */
 }
 
 nav li {
@@ -38,27 +51,27 @@ nav li {
 /* Sections */
 section {
   padding: 40px 0;
+  color: var(--text-light); /* Texte blanc pour les sections */
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: var(--text-black); /* Titres en noir */
 }
-
-/* Services */
-/* ... (autres styles) ... */
 
 /* Services */
 .services-grid {
-  display: flex;  /* Affiche les cartes en ligne */
-  justify-content: center; /* Centre les cartes */
-  gap: 20px; /* Espacement entre les cartes */
+  display: flex;  
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .service-card {
-  width: 300px; /* Largeur de la carte */
-  height: 200px; /* Hauteur de la carte */
-  perspective: 1000px; /* Crée un effet de perspective */
+  width: 300px; 
+  height: 200px; 
+  perspective: 1000px; 
+  border-radius: 10px; 
 }
 
 .service-card-inner {
@@ -66,31 +79,33 @@ h2 {
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
-  transform-style: preserve-3d; /* Maintient l'effet 3D lors de la transition */
+  transform-style: preserve-3d; 
 }
 
 .service-card:hover .service-card-inner {
-  transform: rotateY(180deg); /* Rotation au survol */
+  transform: rotateY(180deg); 
 }
 
 .service-card-front, .service-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Cache la face arrière */
+  backface-visibility: hidden; 
   display: flex;
-  flex-direction: column; /* Organiser les éléments en colonne */
-  align-items: center; /* Centrer horizontalement */
-  border-radius: 25px;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 10px;
+  color: var(--text-light); /* Texte blanc sur les cartes */
 }
 
 .service-card-front {
-  background-color: #bbb; /* Couleur de la face avant */
+  background-color: var(--bg-dark); /* Gris très foncé */
 }
 
 .service-card-back {
-  background-color: #ddd; /* Couleur de la face arrière */
-  transform: rotateY(180deg); /* Rotation initiale de la face arrière */
+  background-color: var(--text-warning); /* Jaune */
+  transform: rotateY(180deg);
 }
 
 /* Tarifs */
@@ -101,9 +116,10 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--text-light); /* Bordure blanche pour le tableau */
   padding: 10px;
   text-align: left;
+  color: var(--text-light); /* Texte blanc pour le tableau */
 }
 
 /* Contact */
@@ -114,4 +130,5 @@ th, td {
 
 #contact li {
   margin-bottom: 10px;
+  color: var(--text-light); /* Texte blanc pour la section Contact */
 }
