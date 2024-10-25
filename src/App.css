@@ -1,12 +1,11 @@
-/* App.css */
-@import './colors.css';
+@import "./colors.css";
 
 /* Général */
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: var(--bg-secondary); /* Gris foncé en fond */
-  color: var(--text-black); /* Texte noir */
+  background-color: var(--bg-secondary);
+  color: var(--text-black);
 }
 
 .container {
@@ -16,62 +15,163 @@ body {
 }
 
 /* Navbar */
-nav {
+.navbar {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 1rem;
   display: flex;
-  flex-direction: column; /* éléments en colonne */
-  align-items: center; /* centrer horizontalement */
-  padding: 20px;
-  background-color: var(--bleu-pastel); 
+  justify-content: flex-start; /* Aligner le contenu à gauche */
+  align-items: center;
 }
 
-.navbar-container { /* Conteneur pour le logo et la navbar */
+.navbar-brand {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
+  align-items: center;
+  text-decoration: none;
+  margin-right: auto; /* Pousser le logo à gauche */
 }
 
-.navbar-container img {
-  max-height: 80px;
-  margin-bottom: 20px; /* Espace entre le logo et la navbar */
+.logo {
+  height: 50px;
+  margin-right: 10px;
 }
 
-nav ul {
+.brand-name {
+  color: var(--text-warning);
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-light);
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-light);
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.navbar-nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Afficher les liens en ligne */
-  width: 100%; /* La navbar occupe toute la largeur */
-  justify-content: center; /* Centrer les liens */
+  display: flex;
+  align-items: center;
 }
 
-nav li {
+.nav-item {
   margin-left: 20px;
+}
+
+.nav-link {
+  color: var(--text-warning);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--text-light);
+}
+
+/* Responsive - Afficher le bouton et le menu sur petit écran */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-dark);
+    padding: 1rem;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
 }
 
 /* Sections */
 section {
   padding: 40px 0;
-  color: var(--text-light); /* Texte blanc pour les sections */
+  color: var(--text-light);
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: var(--text-black); /* Titres en noir */
+  color: var(--text-black);
 }
 
-/* Services */
+/* Services (Cartes) */
 .services-grid {
-  display: flex;  
-  justify-content: center; 
-  gap: 20px; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .service-card {
-  width: 300px; 
-  height: 200px; 
-  perspective: 1000px; 
-  border-radius: 10px; 
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  border: 1px solid var(--text-light);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .service-card-inner {
@@ -79,32 +179,33 @@ h2 {
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
 
 .service-card:hover .service-card-inner {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
-.service-card-front, .service-card-back {
+.service-card-front,
+.service-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; 
+  backface-visibility: hidden;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  color: var(--text-light); /* Texte blanc sur les cartes */
+  color: var(--text-light);
 }
 
 .service-card-front {
-  background-color: var(--bg-dark); /* Gris très foncé */
+  background-color: var(--bg-dark);
 }
 
 .service-card-back {
-  background-color: var(--text-warning); /* Jaune */
+  background-color: var(--text-warning);
   transform: rotateY(180deg);
 }
 
@@ -113,13 +214,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  color: var(--text-light);
 }
 
-th, td {
-  border: 1px solid var(--text-light); /* Bordure blanche pour le tableau */
+th,
+td {
+  border: 1px solid var(--text-light);
   padding: 10px;
   text-align: left;
-  color: var(--text-light); /* Texte blanc pour le tableau */
 }
 
 /* Contact */
@@ -130,5 +232,28 @@ th, td {
 
 #contact li {
   margin-bottom: 10px;
-  color: var(--text-light); /* Texte blanc pour la section Contact */
+  color: var(--text-light);
+}
+
+#contact a {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: var(--text-warning);
+}
+
+/* Boutons */
+.button {
+  background-color: var(--text-warning);
+  color: var(--text-black);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darken(var(--text-warning), 10%);
 }
