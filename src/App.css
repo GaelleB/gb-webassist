@@ -5,8 +5,8 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  background-color: grey; /* Gris clair en fond */
-  color: var(--text-light); /* Texte blanc pour le contraste */
+  background-color: grey;
+  color: var(--text-light); 
 }
 
 .container {
@@ -17,14 +17,13 @@ body {
 
 /* Navbar */
 nav {
-  background-color: var(--bg-secondary); /* Gris foncé en fond */
+  background-color: var(--bg-secondary); 
   display: flex;
-  align-items: center; /* Aligner verticalement au centre */
+  align-items: center; 
   padding: 10px;
-  border-bottom: 2px solid var(--text-light); /* Bordure en bas */
-  position: fixed; /* Fixer la navbar */
-  width: 100%; /* Occuppe toute la largeur */
-  z-index: 100; /* Assurer que la navbar est au-dessus des autres éléments */
+  border-bottom: 2px solid var(--text-light); 
+  width: 100%; 
+  z-index: 100; 
 }
 
 .navbar-container { 
@@ -35,32 +34,31 @@ nav {
 
 .navbar-container img {
   max-height: 100px;
-  margin-right: 20px; /* Espace entre le logo et le titre */
+  margin-right: 20px; 
 }
 
-.navbar-container div { /* Conteneur des liens */
-  display: flex; /* Aligner les liens horizontalement */
-  margin-left: 950px; /* Pousser les liens à droite */
+nav ul {
+  list-style: none;
+  margin-left: 900px;
+  padding: 0;
+  display: flex; 
 }
 
-.navbar-container div div { /* Styles pour chaque lien */
-  margin-left: 20px; 
-}
-
-.navbar-container a { /* Styles généraux pour les liens */
-  color: var(--text-warning); /* Couleur du texte */
-  text-decoration: none; 
+nav li {
+  margin-left: 20px;
+  color: var(--text-warning);
 }
 
 /* Sections */
 section {
   padding: 40px 0;
-  color: var(--text-light); /* Texte blanc pour les sections */
+  color: var(--text-light); 
 }
 
 h2 {
   text-align: center;
-  color: var(--text-black); /* Titres en noir */
+  color: var(--text-warning); 
+  font-size: 35px;
 }
 
 /* Services */
@@ -68,8 +66,7 @@ h2 {
   display: flex;  
   justify-content: center; 
   gap: 20px; 
-  flex-wrap: wrap; /* Permettre aux cartes de s'enrouler */
-  margin-top: 200px; /* Ajuster la valeur en fonction de la hauteur de la navbar */
+  flex-wrap: wrap;
 }
 
 .service-card {
@@ -102,16 +99,16 @@ h2 {
   align-items: center; 
   justify-content: center; 
   border-radius: 10px;
-  color: var(--text-light); /* Texte blanc sur les cartes */
+  color: var(--text-light);
 }
 
 .service-card-front {
-  background-color: var(--bg-dark); /* Gris très foncé */
-  text-align: center; /* Centrer le texte */
+  background-color: var(--bg-dark);
+  text-align: center;
 }
 
 .service-card-back {
-  background-color: var(--text-warning); /* Jaune */
+  background-color: var(--text-warning);
   transform: rotateY(180deg);
 }
 
@@ -120,11 +117,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  color: var(--text-light); /* Texte blanc pour le tableau */
+  color: var(--text-light); 
 }
 
 th, td {
-  border: 1px solid var(--text-light); /* Bordure blanche */
+  border: 1px solid var(--text-light);
   padding: 10px;
   text-align: left;
 }
@@ -137,28 +134,10 @@ th, td {
 
 #contact li {
   margin-bottom: 10px;
-  color: var(--text-light); /* Texte blanc */
+  color: var(--text-light);
 }
 
-#contact a { /* Icônes de contact */
-  color: var(--text-black); /* Noir */
+#contact a { 
+  color: var(--text-black);
   text-decoration: none;
-}
-
-#contact a:hover {
-  color: var(--text-warning); /* Jaune au survol */
-}
-
-/* Boutons */
-.button {
-  background-color: var(--text-warning); /* Fond jaune */
-  color: var(--text-black); /* Texte noir */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: darken(var(--text-warning), 10%); 
 }
