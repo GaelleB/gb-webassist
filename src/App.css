@@ -20,16 +20,14 @@ nav {
   background-color: var(--bg-secondary); 
   display: flex;
   align-items: center; 
-  padding: 10px;
   border-bottom: 2px solid var(--text-light); 
   width: 100%; 
-  z-index: 100; 
 }
 
 .navbar-container { 
   display: flex;
   align-items: center; 
-  width: 100%; 
+  width: 99%; 
 }
 
 .navbar-container img {
@@ -39,9 +37,10 @@ nav {
 
 nav ul {
   list-style: none;
-  margin-left: 900px;
+  margin: 0;
   padding: 0;
   display: flex; 
+  margin-left: auto; 
 }
 
 nav li {
@@ -70,11 +69,11 @@ h2 {
 }
 
 .service-card {
-  width: 300px; 
-  height: 200px; 
+  width: 350px; 
+  height: 250px; 
   perspective: 1000px; 
-  border-radius: 10px; 
-  margin-bottom: 20px; 
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .service-card-inner {
