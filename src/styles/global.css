@@ -294,7 +294,7 @@ strong, .suggestion {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  padding: 80px 20px; /* Ajout de padding horizontal */
+  padding: 120px 20px; 
 }
 
 .article-contact {
