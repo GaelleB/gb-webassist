@@ -117,7 +117,8 @@ body {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
-  padding: 8px 15px;
+  padding: 10px 20px;  /* Augmenter le padding */
+  font-size: 1.2em;  /* Augmenter la taille de la police */
   margin: 0 10px;
   border-radius: 20px;
   background-color: transparent;
@@ -292,8 +293,8 @@ strong, .suggestion {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
-  padding-top: 20px;
+  min-height: 80vh;
+  padding: 80px 20px; /* Ajout de padding horizontal */
 }
 
 .article-contact {
@@ -303,7 +304,7 @@ strong, .suggestion {
   border: 2px solid var(--primary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   max-width: 800px;
-  text-align: center;
+  text-align: center; /* Centrer le contenu de la carte */
   color: #dfe6e9;
 }
 
@@ -367,8 +368,8 @@ button:hover {
   }
 
   .navbar ul li a {
-    padding: 5px 10px;
-    font-size: 1em;
+    padding: 8px 13px;
+    font-size: 1.3em;
     margin: 5px 0;
   }
 
@@ -398,6 +399,13 @@ button:hover {
   .service-card .price {
     font-size: 1.5em;
   }
+  .main-contact {
+    padding: 40px 20px; /* Réduire le padding vertical */
+  }
+
+  .article-contact {
+    padding: 10px; /* Réduire le padding */
+  }
 
   .call-to-action {
     font-size: 1em;
@@ -406,6 +414,10 @@ button:hover {
 
 /* Pour les mobiles */
 @media (max-width: 480px) {
+  .header-content .logo {
+    height: 80px;
+  }
+  
   .navbar ul li a {
     font-size: 0.8em;
   }
@@ -423,7 +435,21 @@ button:hover {
     font-size: 1.5em;
   }
 
-  .header-content .logo {
-    height: 80px;
+  .article-contact {
+    width: 90%; /* Occuper 90% de la largeur de l'écran */
+    padding: 20px 10px; /* Padding vertical plus important que le padding horizontal */
+  }
+
+  .contact-title {
+    font-size: 2.5em; 
+  }
+
+  .article-contact p {
+    font-size: 0.9em; 
+  }
+
+  .buttonGoogleForm {
+    padding: 10px 15px;
+    font-size: 0.8em;
   }
 }
