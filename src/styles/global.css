@@ -117,8 +117,8 @@ body {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
-  padding: 10px 20px;  /* Augmenter le padding */
-  font-size: 1.2em;  /* Augmenter la taille de la police */
+  padding: 10px 20px;  
+  font-size: 1.2em; 
   margin: 0 10px;
   border-radius: 20px;
   background-color: transparent;
@@ -304,7 +304,7 @@ strong, .suggestion {
   border: 2px solid var(--primary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   max-width: 800px;
-  text-align: center; /* Centrer le contenu de la carte */
+  text-align: center;
   color: #dfe6e9;
 }
 
@@ -400,11 +400,11 @@ button:hover {
     font-size: 1.5em;
   }
   .main-contact {
-    padding: 40px 20px; /* Réduire le padding vertical */
+    padding: 40px 20px; 
   }
 
   .article-contact {
-    padding: 10px; /* Réduire le padding */
+    padding: 10px; 
   }
 
   .call-to-action {
@@ -436,8 +436,8 @@ button:hover {
   }
 
   .article-contact {
-    width: 90%; /* Occuper 90% de la largeur de l'écran */
-    padding: 20px 10px; /* Padding vertical plus important que le padding horizontal */
+    width: 90%; 
+    padding: 20px 10px; 
   }
 
   .contact-title {
