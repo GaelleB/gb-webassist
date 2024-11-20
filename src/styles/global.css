@@ -149,6 +149,7 @@ body {
   color: var(--highlight-color);
   margin-bottom: 20px;
   margin-top: 80px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .home-intro {
@@ -223,6 +224,7 @@ strong, .suggestion {
   color: var(--highlight-color);
   margin-bottom: 20px;
   margin-top: 80px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .cards-container {
