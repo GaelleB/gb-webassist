@@ -1,18 +1,22 @@
-import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
-import Services from './components/Services';
-import Tarifs from './components/Tarifs';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './compoments/Header';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Services/>
-      <Tarifs/>
-      <Contact/>
-    </div>
+    <Router>
+      <div>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
