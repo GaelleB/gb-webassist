@@ -211,6 +211,10 @@ strong, .suggestion {
   margin-right: 10px;
 }
 
+.suggestion {
+  color: #DFAF2C;
+}
+
 /* Services */
 .main-services {
   text-align: center;
@@ -368,7 +372,7 @@ button:hover {
   }
 
   .navbar ul li a {
-    padding: 8px 13px;
+    padding: 5px 8px;
     font-size: 1.3em;
     margin: 5px 0;
   }

@@ -33,7 +33,7 @@ function Home() {
             <li>Formation et conseils personnalisés.</li>
           </ul>
           <p className='suggestion'>
-          <strong>Besoin d'un dépannage urgent ? Contactez-moi par téléphone au 06 74 84 17 93 ou aller sur la page contact pour remplir un des formulaires.</strong>
+          Besoin d'un dépannage urgent ? Contactez-moi par téléphone au 06 74 84 17 93 ou aller sur la page contact pour remplir un des formulaires.
           </p>
         </div>
       </article>
