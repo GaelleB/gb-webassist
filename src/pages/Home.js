@@ -32,8 +32,8 @@ function Home() {
             <li>Maintenance de vos équipements.</li>
             <li>Formation et conseils personnalisés.</li>
           </ul>
-          <p className='suggestion'>
-          Besoin d'un dépannage urgent ? Contactez-moi par téléphone au 06 74 84 17 93 ou aller sur la page contact pour remplir un des formulaires.
+          <p className="suggestion">
+            Besoin d'un dépannage urgent ? Allez sur la page contact pour remplir un des formulaires.
           </p>
         </div>
       </article>
