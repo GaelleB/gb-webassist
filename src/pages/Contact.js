@@ -26,9 +26,6 @@ function Contact() {
         >
           Remplir le formulaire pour demander un devis
         </button>
-        <p>
-          Vous pouvez aussi me contacter par téléphone au <strong>06 74 84 17 93</strong>.
-        </p>
       </article>
     </main>
   );
