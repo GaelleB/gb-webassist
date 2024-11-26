@@ -1,18 +1,14 @@
 /* Variables CSS pour les couleurs et polices */
 :root {
-  --primary-color: #DFAF2C;
-  /* Jaune */
-  --secondary-color: #f1c40f;
-  /* Jaune plus clair */
-  --background-dark: #2c3e50;
-  /* Fond sombre */
   --background-body: #36454f;
   /* Fond principal du body */
+  --background-dark: #2c3e50;
+  /* Fond sombre */
+  --primary-color: #F9C906;
+  /* Jaune plus clair */
   --text-light: #eeeeee;
   /* Texte clair */
-  --highlight-color: #219150;
-  /* Vert foncé */
-  --accent-color: #2ecc71;
+  --accent-color: #2ecc71; 
   /* Vert plus clair */
 }
 
@@ -37,40 +33,6 @@
   50% {
     transform: scale(1.05);
   }
-}
-
-/* Classes utilitaires */
-.transition {
-  transition: all 0.3s ease-in-out;
-}
-
-.box-shadow {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.pulse {
-  animation: pulse 2s infinite;
-}
-
-.font-primary {
-  font-family: 'Poppins', sans-serif;
-}
-
-.font-secondary {
-  font-family: 'Playfair Display', serif;
-}
-
-.title {
-  font-size: 3em;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
 }
 
 /* Général */
@@ -100,7 +62,8 @@ body {
 }
 
 .header-content .logo {
-  height: 125px;
+  height: 150px;
+  filter: drop-shadow(2px 2px 4px #000000); /* Ombre portée pour l'icône du logo */
 }
 
 .navbar ul {
@@ -143,11 +106,11 @@ body {
   padding: 80px;
 }
 
-.home-title {
+.home-title, .service-title {
   font-size: 3.5em;
   font-weight: bold;
   text-align: center;
-  color: var(--highlight-color);
+  color: var(--accent-color);
   margin-bottom: 20px;
   margin-top: 80px;
   animation: fadeIn 1s ease-in-out;
@@ -163,16 +126,16 @@ body {
 }
 
 .accroche {
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: bold;
-  color: var(--text-light);
+  color: var(--primary-color);
   margin-bottom: 15px;
   font-family: 'Poppins', sans-serif;
 }
 
 .proposition-valeur {
   font-size: 1.2em;
-  color: #bbbbbb;
+  color: var(--text-light);
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
 }
@@ -185,10 +148,6 @@ body {
   margin: 20px 0;
 }
 
-strong, .suggestion {
-  color: black;
-}
-
 .home-intro ul {
   list-style: none;
   padding-left: 0;
@@ -199,7 +158,7 @@ strong, .suggestion {
 
 .home-intro li {
   margin-bottom: 10px;
-  font-size: 1em;
+  font-size: 1.2em;
   display: flex;
   align-items: center;
 }
@@ -211,8 +170,15 @@ strong, .suggestion {
   margin-right: 10px;
 }
 
+strong, .suggestion {
+  color: var(--accent-color);
+  font-size: 2em;
+}
+
 .suggestion {
-  color: #DFAF2C;
+  color: var(--primary-color);
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* Services */
@@ -221,15 +187,6 @@ strong, .suggestion {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px;
-}
-
-.service-title {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: var(--highlight-color);
-  margin-bottom: 20px;
-  margin-top: 80px;
-  animation: fadeIn 1s ease-in-out;
 }
 
 .cards-container {
@@ -262,9 +219,9 @@ strong, .suggestion {
   font-family: 'Playfair Display', serif;
 }
 
-.service-card p {
+.service-card .sous-titre {
   padding-bottom: 20px;
-  color: black;
+  color: var(--text-light);
   font-size: 1.5em;
   text-align: left;
 }
@@ -288,7 +245,7 @@ strong, .suggestion {
   font-weight: bold;
   padding-bottom: 10px;
   padding-top: 50px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -313,9 +270,8 @@ strong, .suggestion {
 }
 
 .contact-title {
-  font-size: 3em;
-  color: var(--highlight-color);
-  margin-bottom: 20px;
+  font-size: 3.2em;
+  color: var( --accent-color);
   font-family: 'Playfair Display', serif;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
@@ -331,7 +287,8 @@ strong, .suggestion {
 .article-contact a {
   color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease,
+  text-decoration 0.3s ease;
 }
 
 .article-contact a:hover {
@@ -339,15 +296,16 @@ strong, .suggestion {
   text-decoration: underline;
 }
 
-/* Boutons d'appel à l'action sur les pages home & services */
+/* Boutons d'appel à l'action sur la page contact */
 button {
-  background: linear-gradient(to right, var(--secondary-color), #f39c12);
-  color: black;
+  background: radial-gradient(circle, #2980b9 0%, #27ae60 100%);
+  color: white;
+  font-weight: bold;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -356,8 +314,6 @@ button {
 }
 
 button:hover {
-  background-color: linear-gradient(to right, var(--accent-color), #f39c12);
-  color: #ffffff;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -396,11 +352,11 @@ button:hover {
     font-size: 2em;
   }
 
-  .service-card p {
+  .service-card .sous-titre {
     font-size: 1em;
   }
 
-  .service-card .price {
+  .service-card.price {
     font-size: 1.5em;
   }
   .main-contact {
