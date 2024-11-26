@@ -4,7 +4,7 @@ import '../styles/global.css';
 function Services() {
   return (
     <main className="main-services">
-      <h2 className='service-title'>Mes services</h2>
+      <h1 className='service-title'>Mes services</h1>
       <div className="cards-container">
         <article className="service-card">
           <h3>Création de site vitrine</h3>

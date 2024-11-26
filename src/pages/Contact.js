@@ -5,7 +5,7 @@ function Contact() {
   return (
     <main className="main-contact">
       <article className="article-contact">
-      <h2 className="contact-title">Contactez-moi</h2>
+      <h1 className="contact-title">Contactez-moi</h1>
         <p>
         Vous avez une question ou un projet à me confier ? Je serais ravie de vous accompagner !<br/>
         Veuillez remplir le formulaire de contact via le bouton ci-dessous :

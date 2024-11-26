@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/global.css';
-import imageOrdinateur from '../assets/image-ordinateur.jpg'; // Importez l'image
+import imageOrdinateur from '../assets/image-ordinateur.jpg';
 
 function Home() {
   return (
     <main className="main-home">
       <article>
-      <h2 className="home-title">Bienvenue chez GB WebAssist</h2>
+      <h1 className="home-title">Bienvenue chez GB WebAssist</h1>
         <div class="home-intro"> 
         <p className="accroche">
             GB WebAssist : Votre partenaire web et informatique
