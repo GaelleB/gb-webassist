@@ -8,7 +8,7 @@
   /* Jaune plus clair */
   --text-light: #eeeeee;
   /* Texte clair */
-  --accent-color: #2ecc71; 
+  --accent-color: #2ecc71;
   /* Vert plus clair */
 }
 
@@ -63,7 +63,8 @@ body {
 
 .header-content .logo {
   height: 150px;
-  filter: drop-shadow(2px 2px 4px #000000); /* Ombre portée pour l'icône du logo */
+  filter: drop-shadow(2px 2px 4px #000000);
+  /* Ombre portée pour l'icône du logo */
 }
 
 .navbar ul {
@@ -80,8 +81,8 @@ body {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
-  padding: 10px 20px;  
-  font-size: 1.2em; 
+  padding: 10px 20px;
+  font-size: 1.2em;
   margin: 0 10px;
   border-radius: 20px;
   background-color: transparent;
@@ -106,7 +107,8 @@ body {
   padding: 80px;
 }
 
-.home-title, .service-title {
+.home-title,
+.service-title {
   font-size: 3.5em;
   font-weight: bold;
   text-align: center;
@@ -170,7 +172,8 @@ body {
   margin-right: 10px;
 }
 
-strong, .suggestion {
+strong,
+.suggestion {
   color: var(--accent-color);
   font-size: 2em;
 }
@@ -212,7 +215,7 @@ strong, .suggestion {
   text-align: center;
 }
 
-.service-card h3 {
+.service-card h2 {
   font-size: 2.8em;
   padding-bottom: 10px;
   color: var(--primary-color);
@@ -255,7 +258,7 @@ strong, .suggestion {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  padding: 120px 20px; 
+  padding: 120px 20px;
 }
 
 .article-contact {
@@ -271,7 +274,7 @@ strong, .suggestion {
 
 .contact-title {
   font-size: 3.2em;
-  color: var( --accent-color);
+  color: var(--accent-color);
   font-family: 'Playfair Display', serif;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
@@ -288,7 +291,7 @@ strong, .suggestion {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease,
-  text-decoration 0.3s ease;
+    text-decoration 0.3s ease;
 }
 
 .article-contact a:hover {
@@ -348,7 +351,7 @@ button:hover {
     padding: 20px;
   }
 
-  .service-card h3 {
+  .service-card h2 {
     font-size: 2em;
   }
 
@@ -359,12 +362,13 @@ button:hover {
   .service-card.price {
     font-size: 1.5em;
   }
+
   .main-contact {
-    padding: 40px 20px; 
+    padding: 40px 20px;
   }
 
   .article-contact {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .call-to-action {
@@ -377,7 +381,7 @@ button:hover {
   .header-content .logo {
     height: 80px;
   }
-  
+
   .navbar ul li a {
     font-size: 0.8em;
   }
@@ -391,21 +395,21 @@ button:hover {
     min-width: 90%;
   }
 
-  .service-card h3 {
+  .service-card h2 {
     font-size: 1.5em;
   }
 
   .article-contact {
-    width: 90%; 
-    padding: 20px 10px; 
+    width: 90%;
+    padding: 20px 10px;
   }
 
   .contact-title {
-    font-size: 2.5em; 
+    font-size: 2.5em;
   }
 
   .article-contact p {
-    font-size: 0.9em; 
+    font-size: 0.9em;
   }
 
   .buttonGoogleForm {

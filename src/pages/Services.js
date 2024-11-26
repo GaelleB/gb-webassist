@@ -7,10 +7,10 @@ function Services() {
       <h1 className='service-title'>Mes services</h1>
       <div className="cards-container">
         <article className="service-card">
-          <h3>Création de site vitrine</h3>
-          <p className='sous-titre'>
-            Boostez votre visibilité en ligne avec un site vitrine professionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
-          </p>
+          <h2>Création de site vitrine</h2>
+          <h3 className='sous-titre'>
+            Boostez votre visibilité en ligne avec un site vitrine h2rofessionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
+          </h3>
           <ul>
             <li>Renforcez votre image de marque et gagnez la confiance de vos visiteurs</li>
             <li>Présentez vos produits et services de manière professionnelle et impactante</li>
@@ -22,10 +22,10 @@ function Services() {
         </article>
 
         <article className="service-card">
-          <h3>Création de site e-commerce</h3>
-          <p className='sous-titre'>
+          <h2>Création de site e-commerce</h2>
+          <h3 className='sous-titre'>
             Transformez votre activité avec un site e-commerce performant. Vendez vos produits en ligne 24/7, offrez une expérience d'achat fluide et suivez vos ventes grâce à une plateforme sur mesure.
-          </p>
+          </h3>
           <ul>
             <li>Multipliez vos ventes avec une boutique en ligne disponible 24/7, accessible de partout</li>
             <li>Gérez facilement vos produits, stocks et commandes grâce à un tableau de bord intuitif</li>
@@ -38,10 +38,10 @@ function Services() {
         </article>
 
         <article className="service-card">
-          <h3>Refonte & Modification de Site</h3>
-          <p className='sous-titre'>
+          <h2>Refonte & Modification de Site</h2>
+          <h3 className='sous-titre'>
             Votre site a vieilli ? Offrez-lui une nouvelle jeunesse ! Je réalise une refonte complète ou partielle pour moderniser le design, améliorer son SEO et optimiser l'expérience utilisateur.
-          </p>
+          </h3>
           <ul>
             <li>Redonnez vie à votre site avec un design moderne, élégant et ergonomique qui séduit vos visiteurs</li>
             <li>Boostez votre visibilité sur Google avec un SEO optimisé et améliorez la vitesse de chargement pour une meilleure expérience utilisateur</li>
@@ -52,10 +52,10 @@ function Services() {
         </article>
 
         <article className="service-card">
-          <h3>Assistance Informatique</h3>
-          <p className='sous-titre'>
+          <h2>Assistance Informatique</h2>
+          <h3 className='sous-titre'>
             Vous avez un souci informatique ? Je vous propose une assistance rapide et personnalisée, à domicile ou à distance, pour résoudre tous vos problèmes informatiques.
-          </p>
+          </h3>
           <ul>
             <li>Résolvez rapidement vos problèmes informatiques grâce à un dépannage matériel et logiciel professionnel</li>
             <li>Installez et configurez vos logiciels et périphériques en toute simplicité, sans tracas</li>
