@@ -18,7 +18,7 @@ function Services() {
             <li>Offrez un site moderne et responsive, accessible sur tous les appareils</li>
             <li>Optimisez votre présence en ligne avec un design personnalisé et un SEO performant</li>
           </ul>
-          <p className="price">600 €</p>
+          <p className="price">À partir de 600 €</p>
         </article>
 
         <article className="service-card">
@@ -34,7 +34,7 @@ function Services() {
             <li>Optimisez votre gestion en automatisant des tâches comme la gestion des stocks ou l'envoi de notifications</li>
             <li>Suivez les performances de votre site en temps réel et ajustez votre stratégie de vente pour maximiser vos revenus</li>
           </ul>
-          <p className="price">1500 €</p>
+          <p className="price">À partir de 1500 €</p>
         </article>
 
         <article className="service-card">
