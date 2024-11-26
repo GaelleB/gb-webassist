@@ -8,7 +8,7 @@ function Services() {
       <div className="cards-container">
         <article className="service-card">
           <h3>Création de site vitrine</h3>
-          <p>
+          <p className='sous-titre'>
             Boostez votre visibilité en ligne avec un site vitrine professionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
           </p>
           <ul>
@@ -23,7 +23,7 @@ function Services() {
 
         <article className="service-card">
           <h3>Création de site e-commerce</h3>
-          <p>
+          <p className='sous-titre'>
             Transformez votre activité avec un site e-commerce performant. Vendez vos produits en ligne 24/7, offrez une expérience d'achat fluide et suivez vos ventes grâce à une plateforme sur mesure.
           </p>
           <ul>
@@ -39,7 +39,7 @@ function Services() {
 
         <article className="service-card">
           <h3>Refonte & Modification de Site</h3>
-          <p>
+          <p className='sous-titre'>
             Votre site a vieilli ? Offrez-lui une nouvelle jeunesse ! Je réalise une refonte complète ou partielle pour moderniser le design, améliorer son SEO et optimiser l'expérience utilisateur.
           </p>
           <ul>
@@ -53,7 +53,7 @@ function Services() {
 
         <article className="service-card">
           <h3>Assistance Informatique</h3>
-          <p>
+          <p className='sous-titre'>
             Vous avez un souci informatique ? Je vous propose une assistance rapide et personnalisée, à domicile ou à distance, pour résoudre tous vos problèmes informatiques.
           </p>
           <ul>
