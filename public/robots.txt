@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://gb-webassist.fr//sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /images/
+
+User-agent: Bingbot
+Crawl-delay: 10
