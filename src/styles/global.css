@@ -172,15 +172,9 @@ body {
   margin-right: 10px;
 }
 
-strong,
-.suggestion {
-  color: var(--accent-color);
-  font-size: 2em;
-}
-
-.suggestion {
+strong {
   color: var(--primary-color);
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -248,7 +242,7 @@ strong,
   font-weight: bold;
   padding-bottom: 10px;
   padding-top: 50px;
-  color: var(--accent-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -301,7 +295,7 @@ strong,
 
 /* Boutons d'appel à l'action sur la page contact */
 button {
-  background: radial-gradient(circle, #2980b9 0%, #27ae60 100%);
+  background: linear-gradient(to right, #f1c40f, #e67e22);
   color: white;
   font-weight: bold;
   padding: 10px 20px;
