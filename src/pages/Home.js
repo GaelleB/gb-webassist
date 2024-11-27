@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/global.css';
-import imageOrdinateur from '../assets/image-ordinateur.jpg';
+import imageOrdinateur from '../assets/image-ordinateur.webp';
 
 function Home() {
   return (
