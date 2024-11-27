@@ -22,7 +22,7 @@ function Contact() {
         </p>
         <button
           className="buttonGoogleForm"
-          onClick={() => window.open('https://forms.gle/GSCXL1FgeP1sEN15A', '_blank')}
+          onClick={() => window.open('https://forms.gle/LkaFWhAmyBAZ3Nsq9', '_blank')}
         >
           Remplir le formulaire pour demander un devis
         </button>
