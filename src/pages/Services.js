@@ -9,7 +9,7 @@ function Services() {
         <article className="service-card">
           <h2>Création de site vitrine</h2>
           <h3 className='sous-titre'>
-            Boostez votre visibilité en ligne avec un site vitrine h2rofessionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
+            Boostez votre visibilité en ligne avec un site vitrine professionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
           </h3>
           <ul>
             <li>Renforcez votre image de marque et gagnez la confiance de vos visiteurs</li>
