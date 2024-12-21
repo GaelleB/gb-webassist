@@ -178,6 +178,54 @@ strong {
   font-weight: bold;
 }
 
+/* About */
+.about-container {
+  padding: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: calc(100vh - 150px); 
+}
+
+.about-content {
+  display: flex; 
+  align-items: center; 
+  max-width: 1200px; 
+  width: 100%; 
+  border: 2px solid transparent; 
+  border-radius: 8px; 
+  margin: 200px;
+  padding-left: 50px;
+  background-color: var(--background-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-text {
+  max-width: 70%; 
+  padding: 0 20px; 
+  font-size: 1.1rem; 
+  line-height: 1.6;
+}
+
+.about-photo {
+  width: 30%;  /* L'image prendra 30% de la largeur du conteneur */
+  height: auto; 
+  margin-right: 20px; /* On ajoute une marge à droite de l'image */
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.about-text h1, h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #FFD700;
+  text-align: center; /* On centre les titres */
+}
+
+.about-content h2 { 
+  margin-top: 20px; 
+}
+
 /* Services */
 .main-services {
   text-align: center;
@@ -343,6 +391,21 @@ button:hover {
   .home-intro,
   .service-card {
     padding: 20px;
+  }
+
+  .about-content {
+    flex-direction: column; /* Empile l'image et le texte */
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%; /* Utilise toute la largeur pour le texte */
+    padding: 10px;
+  }
+
+  .about-image {
+    max-width: 80%; /* Ajuste la taille de l'image sur les petits écrans */
+    margin: 0 auto; /* Centre l'image */
   }
 
   .service-card h2 {

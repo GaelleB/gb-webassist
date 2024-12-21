@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/global.css'; // Assurez-vous que les styles sont bien importés
+import '../styles/global.css'; 
 
 function Contact() {
   return (
