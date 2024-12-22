@@ -4,19 +4,20 @@ import '../styles/global.css';
 function Services() {
   return (
     <main className="main-services">
-      <h1 className='service-title'>Mes services</h1>
+      <h1 className='service-title'>Mes services pour les TPE/PME</h1>
+      <p className="intro-text">
+        Mon objectif : accompagner les TPE et PME dans leur transformation digitale avec des solutions adaptées à leur budget et à leurs besoins. Que vous souhaitiez augmenter votre visibilité en ligne, vendre vos produits, ou optimiser vos outils numériques, je suis là pour vous aider à chaque étape.
+      </p>
       <div className="cards-container">
         <article className="service-card">
           <h2>Création de site vitrine</h2>
           <h3 className='sous-titre'>
-            Boostez votre visibilité en ligne avec un site vitrine professionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs. Offrez une expérience utilisateur fluide et intuitive.
+            Boostez votre visibilité en ligne avec un site vitrine professionnel. Je crée un site sur mesure qui reflète l’image de votre entreprise et capte l’attention de vos visiteurs.
           </h3>
           <ul>
-            <li>Renforcez votre image de marque et gagnez la confiance de vos visiteurs</li>
-            <li>Présentez vos produits et services de manière professionnelle et impactante</li>
-            <li>Boostez vos ventes et générez des leads qualifiés</li>
-            <li>Offrez un site moderne et responsive, accessible sur tous les appareils</li>
-            <li>Optimisez votre présence en ligne avec un design personnalisé et un SEO performant</li>
+            <li>Renforcez votre image de marque et gagnez la confiance de vos visiteurs.</li>
+            <li>Présentez vos produits et services de manière professionnelle et impactante.</li>
+            <li>Offrez un site moderne et responsive, accessible sur tous les appareils.</li>
           </ul>
           <p className="price">À partir de 600 €</p>
         </article>
@@ -24,15 +25,12 @@ function Services() {
         <article className="service-card">
           <h2>Création de site e-commerce</h2>
           <h3 className='sous-titre'>
-            Transformez votre activité avec un site e-commerce performant. Vendez vos produits en ligne 24/7, offrez une expérience d'achat fluide et suivez vos ventes grâce à une plateforme sur mesure.
+            Transformez votre activité avec un site e-commerce performant, adapté à la gestion simplifiée pour les petites structures.
           </h3>
           <ul>
-            <li>Multipliez vos ventes avec une boutique en ligne disponible 24/7, accessible de partout</li>
-            <li>Gérez facilement vos produits, stocks et commandes grâce à un tableau de bord intuitif</li>
-            <li>Offrez une expérience d'achat fluide et sécurisée avec des options de paiement optimisées</li>
-            <li>Créez des relations durables avec vos clients grâce à des offres personnalisées et un programme de fidélité</li>
-            <li>Optimisez votre gestion en automatisant des tâches comme la gestion des stocks ou l'envoi de notifications</li>
-            <li>Suivez les performances de votre site en temps réel et ajustez votre stratégie de vente pour maximiser vos revenus</li>
+            <li>Multipliez vos ventes avec une boutique en ligne disponible 24/7.</li>
+            <li>Gérez facilement vos produits et commandes grâce à un tableau de bord simple.</li>
+            <li>Offrez une expérience d'achat sécurisée avec des options de paiement adaptées.</li>
           </ul>
           <p className="price">À partir de 1500 €</p>
         </article>
@@ -40,13 +38,12 @@ function Services() {
         <article className="service-card">
           <h2>Refonte & Modification de Site</h2>
           <h3 className='sous-titre'>
-            Votre site a vieilli ? Offrez-lui une nouvelle jeunesse ! Je réalise une refonte complète ou partielle pour moderniser le design, améliorer son SEO et optimiser l'expérience utilisateur.
+            Votre site ne répond plus à vos attentes ? Modernisez-le pour attirer plus de clients.
           </h3>
           <ul>
-            <li>Redonnez vie à votre site avec un design moderne, élégant et ergonomique qui séduit vos visiteurs</li>
-            <li>Boostez votre visibilité sur Google avec un SEO optimisé et améliorez la vitesse de chargement pour une meilleure expérience utilisateur</li>
-            <li>Rendez votre site plus sécurisé et ajoutez de nouvelles fonctionnalités pour répondre aux besoins de vos utilisateurs</li>
-            <li>Adaptez votre site aux dernières technologies pour rester compétitif et attirer de nouveaux visiteurs</li>
+            <li>Modernisez votre site avec un design attractif et ergonomique.</li>
+            <li>Améliorez votre référencement SEO pour être mieux positionné sur Google.</li>
+            <li>Ajoutez des fonctionnalités pour répondre aux besoins actuels de vos clients.</li>
           </ul>
           <p className="price">Sur devis selon le travail</p>
         </article>
@@ -54,22 +51,18 @@ function Services() {
         <article className="service-card">
           <h2>Assistance Informatique</h2>
           <h3 className='sous-titre'>
-            Vous avez un souci informatique ? Je vous propose une assistance rapide et personnalisée, à domicile ou à distance, pour résoudre tous vos problèmes informatiques.
+            Un souci informatique ? Profitez d’une assistance rapide et adaptée, spécialement pour les petites entreprises.
           </h3>
           <ul>
-            <li>Résolvez rapidement vos problèmes informatiques grâce à un dépannage matériel et logiciel professionnel</li>
-            <li>Installez et configurez vos logiciels et périphériques en toute simplicité, sans tracas</li>
-            <li>Préservez la performance de vos systèmes avec une maintenance régulière et des solutions curatives sur mesure</li>
-            <li>Protégez vos données et votre réseau contre les menaces grâce à une sécurité renforcée</li>
-            <li>Bénéficiez de formations et de conseils personnalisés pour maîtriser vos outils informatiques et optimiser vos processus</li>
+            <li>Résolution de problèmes matériels et logiciels.</li>
+            <li>Maintenance préventive pour éviter les pannes.</li>
+            <li>Formation personnalisée pour utiliser vos outils numériques efficacement.</li>
           </ul>
           <p className="price">Sur devis selon le travail</p>
         </article>
-
       </div>
       <p className="call-to-action">
-        Les tarifs sont donnés à titre indicatif et peuvent varier selon la complexité du projet, les attentes du client et les frais occasionnés.
-        Contactez-moi dès aujourd'hui pour discuter de votre projet et obtenir un devis personnalisé.
+        Vous êtes une TPE ou une PME et souhaitez booster votre activité grâce au digital ? Contactez-moi dès aujourd'hui pour obtenir un devis gratuit et personnalisé.
       </p> 
     </main>
   );
